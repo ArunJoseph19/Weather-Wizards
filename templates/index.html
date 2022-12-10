@@ -4,10 +4,36 @@
 </head>
 <body>
 <form action="{{ url_for("gfg")}}" method="post">
-<label for="firstname">First Name:</label>
-<input type="text" id="firstname" name="fname" placeholder="firstname">
-<label for="lastname">Last Name:</label>
-<input type="text" id="lastname" name="lname" placeholder="lastname">
-<button type="submit">Login</button>
+<label for="city">Choose a city:</label>
+<select name="city" id="cars">
+  <option value="bengaluru">Bengaluru</option>
+  <option value="bombay">Bombay</option>
+  <option value="delhi">Delhi</option>
+  <option value="hyderabad">Hyderabad</option>
+  <option value="jaipur">Jaipur</option>
+  <option value="kanpur">Kanpur</option>
+  <option value="nagpur">Nagpur</option>
+  <option value="pune">Pune</option>
+</select>
+
+<label for="sunHour">Sun Hour</label>
+<input type="number" id="sunHour" name="sunHour" placeholder=0.0>
+
+<label for="uvIndex">UV Index</label>
+<input type="number" id="uvIndex" name="uvIndex" placeholder=0.0>
+
+<label for="humidity">Humidity</label>
+<input type="number" id="humidity" name="humidity" placeholder=0.0>
+
+<label for="precipMM">Precipitation (mm)</label>
+<input type="precipMM" id="precipMM" name="precipMM" placeholder=0.0>
+
+<label for="visibility">Visibility</label>
+<input type="visibility" id="visibility" name="visibility" placeholder=0.0>
+
+<label for="pressure">Pressure</label>
+<input type="pressure" id="pressure" name="pressure" placeholder=0.0>
+
+<button type="submit">Predict</button>
 </body>
 </html>
